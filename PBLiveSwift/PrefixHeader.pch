@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  PBLiveSwift
+//
+//  Created by Pengbo on 2017/1/4.
+//  Copyright © 2017年 LivewSwift. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/**系统*/
+//#define IOS_10 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
+
+/**屏幕宽度*/
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+
+/**屏幕高度*/
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+/**宽度比例缩放*/
+#define TRANS_W(w) (w/375.0)*SCREEN_WIDTH
+
+/**高度比例缩放*/
+#define TRANS_H(h) (h/667.0)*SCREEN_HEIGHT
+
+#endif /* PrefixHeader_pch */
